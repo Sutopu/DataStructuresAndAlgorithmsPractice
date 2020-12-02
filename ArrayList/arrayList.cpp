@@ -11,6 +11,7 @@ ArrayList::ArrayList() {
 
 ArrayList::~ArrayList() {
     delete[] array;
+    array = NULL;
 }
 
 void ArrayList::append(int item) {
@@ -23,7 +24,7 @@ void ArrayList::append(int item) {
 
 void ArrayList::remove(int index) {
     if (size == 0) {
-        cerr << "can't remove item: no items in list" << endl;
+        cerr << "can't remove item: no items in list." << endl;
         exit(1);
     }
     if (index > end || index < 0) {
