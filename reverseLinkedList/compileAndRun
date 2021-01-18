@@ -1,0 +1,2 @@
+g++ linkedList.h linkedList.cpp main.cpp
+./a.out
